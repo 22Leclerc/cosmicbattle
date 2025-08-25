@@ -1,0 +1,43 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Patch Bot <you@example.com>
+Date: Sun, 24 Aug 2025 12:00:00 +0000
+Subject: [PATCH] Buff: heróis no máximo potencial (HERO_KITS)
+
+diff --git a/Magneto v18.html b/Magneto v18.html
+index 1111111..2222222 100644
+--- a/Magneto v18.html
++++ b/Magneto v18.html
+@@ -246,21 +246,23 @@ const NITRO = { force: 3.0, cap: 3.0, recharge: 0.8 };
+ const THINK = { min: 0.12, max: 0.26 };
+ 
+-// ---------- Kits ----------
+-const HERO_KITS = {
+-  wanda:   { key:'wanda',   name:'Wanda',   full:'Wanda Maximoff', label:'Wanda Maximoff (Escarlate)', base:'#ff1744', hp:120, speedMul:1.05, boltMul:1.00, ultCd:22, accBolt:0.75, think:THINK, ultName:'Piscar Escarlate' },
+-  fate:    { key:'fate',    name:'Fate',    full:'Doctor Fate',    label:'Doctor Fate (Dourado)',      base:'#ffd400', hp:110, speedMul:1.00, boltMul:0.96, ultCd:22, accBolt:0.74, think:THINK, ultName:'Ankh Dourada' },
+-  magneto: { key:'magneto', name:'Magneto', full:'Magneto',        label:'Magneto (Magnético)',        base:'#7f8cff', hp:135, speedMul:0.98, boltMul:1.08, ultCd:26, accBolt:0.78, think:THINK, ultName:'Colapso Magnético' },
+-  // 🟢 LOKI — novo herói
+-  loki:    { key:'loki',    name:'Loki',    full:'Loki Laufeyson', label:'Loki (Verde)',                base:'#00c853', hp:105, speedMul:1.08, boltMul:1.02, ultCd:20, accBolt:0.77, think:THINK, ultName:'Espelhos do Trapaceiro' }
+-};
++// ---------- Kits (BUFF "máximo potencial") ----------
++const HERO_KITS = {
++  wanda:   {
++    key:'wanda', name:'Wanda', full:'Wanda Maximoff', label:'Wanda Maximoff (Escarlate)', base:'#ff1744',
++    hp:160, speedMul:1.18, boltMul:1.18, ultCd:18, accBolt:0.84, think:THINK, ultName:'Piscar Escarlate'
++  },
++  fate:    {
++    key:'fate', name:'Fate', full:'Doctor Fate', label:'Doctor Fate (Dourado)', base:'#ffd400',
++    hp:150, speedMul:1.12, boltMul:1.12, ultCd:18, accBolt:0.83, think:THINK, ultName:'Ankh Dourada'
++  },
++  magneto: {
++    key:'magneto', name:'Magneto', full:'Magneto', label:'Magneto (Magnético)', base:'#7f8cff',
++    hp:170, speedMul:1.10, boltMul:1.24, ultCd:20, accBolt:0.86, think:THINK, ultName:'Colapso Magnético'
++  },
++  // 🟢 LOKI — novo herói
++  loki:    {
++    key:'loki', name:'Loki', full:'Loki Laufeyson', label:'Loki (Verde)', base:'#00c853',
++    hp:145, speedMul:1.20, boltMul:1.20, ultCd:16, accBolt:0.85, think:THINK, ultName:'Espelhos do Trapaceiro'
++  }
++};
+ 
+ // ---------- Config atual ----------
+ const teamCfg = {
