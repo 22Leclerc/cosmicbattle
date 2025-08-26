@@ -2055,11 +2055,11 @@ refreshPresetSelect();
 
   /* ----------------------------------------------------------------
      3) Ice Man — Passiva dos anéis com cooldown de ~1s (auto-ciclo)
-        - Quando as camadas ficam ativas por ~2.5s, entra CD de 10s.
-        - ULT do Ice Man também força um CD de 10s na passiva.
+        - Quando as camadas ficam ativas por ~2.5s, entra CD de 1s.
+        - ULT do Ice Man também força um CD de 1s na passiva.
      ---------------------------------------------------------------- */
   const ICE_ACTIVE_WINDOW_MS = 2500;  // tempo contínuo de atividade antes de esgotar
-  const ICE_COOLDOWN_MS      = 1000; // 10 segundos de recarga
+  const ICE_COOLDOWN_MS      = 1000; // 1 segundo de recarga
 
   const iceActiveSince = new WeakMap(); // hero -> timestamp
   function isOnIceCD(h, now) {
